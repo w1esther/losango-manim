@@ -96,6 +96,66 @@ class AreaLosango(MovingCameraScene):
 
         self.play(FadeIn(grupo_tri1), FadeIn(grupo_tri2), FadeIn(grupo_tri3), FadeIn(grupo_tri4))
 
-        self.play(FadeOut(losango), FadeOut(label_diagonal_maior), FadeOut(labe_diagonal_menor), FadeOut(label_losango))
+        self.play(FadeOut(losango), FadeOut(label_diagonal_maior), FadeOut(labe_diagonal_menor), FadeOut(label_losango), FadeOut(diagonal_maior), FadeOut(diagonal_menor))
+
+        self.wait(2)
+
+        self.play(grupo_tri3.animate.shift(2*UP + 3*RIGHT))
+
+        self.wait(2)
+
+        self.play(grupo_tri4.animate.shift(2*UP + 3*LEFT))
+
+        self.wait(2)
+
+        label_retangulo = MathTex(r'Retangulo')
+
+        label_retangulo.shift(2.5*UP)
+
+        self.play(FadeIn(label_retangulo))
+
+        self.wait(2)
+
+        label_d2 = MathTex(r'\frac{d}{2}', color=RED)
+
+        label_d2.shift(3.4*RIGHT + 1*UP)
+
+        label_D2 = MathTex(r'D', color=YELLOW)
+
+        label_D2.shift(0.4*DOWN)
+
+        self.play(FadeIn(label_d2), FadeIn(label_D2))
+
+        self.wait(2)
+
+        self.play(self.camera.frame.animate.shift(0.8*DOWN))
+
+        self.wait(2)
+
+        label_area_retangulo = MathTex(r'Area Retangulo:')
+
+        label_area_retangulo.shift(1.4*DOWN)
+
+        area_retangulo = MathTex('b_{base} \cdot h_{altura}')
+
+        area_retangulo.shift(2.2*DOWN)
+
+        self.play(FadeIn(label_area_retangulo),  Write(area_retangulo))
+
+        self.wait(2)
+
+        area_retangulo2 = MathTex(r'\frac {D \cdot d}{2}')
+
+        area_retangulo2.shift(2.5*DOWN)
+
+        self.play(Transform(area_retangulo, area_retangulo2), FadeOut(label_retangulo))
+
+        self.wait(2)
+
+        label_area_losango = MathTex(r'AreaLosango:')
+
+        label_area_losango.shift(1.4*DOWN)
+
+        self.play(Transform(label_area_retangulo, label_area_losango))
 
         self.wait(2)
