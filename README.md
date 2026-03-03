@@ -6,7 +6,7 @@ Este repositório é dedicado a **scripts em Python**, utilizando a biblioteca *
 
 ## 🎯 Para que serve?
 
-mostrar, de forma **visual e dinâmica**, o motivo pelo qual a área do losangi é calculada pela (base maior mais a base menor) vezes a altura tudo isso dividido por dois.
+mostrar, de forma **visual e dinâmica**, o motivo pelo qual a área do losango é calculada pela diagonal maior vezes a diagonal menor tudo isso dividido por dois.
 
 ---
 
@@ -146,4 +146,4 @@ Depois, entre na pasta do projeto e execute o Manim normalmente.
 
 ---
 
-✨ Projeto pronto para execução da demonstração algébrica do Teorema de Pitágoras.
+✨ Projeto pronto para execução da Área do Losango.
