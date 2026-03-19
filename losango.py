@@ -108,7 +108,7 @@ class AreaLosango(MovingCameraScene):
 
         self.wait(2)
 
-        label_retangulo = MathTex(r'Retangulo')
+        label_retangulo = Text('Retângulo')
 
         label_retangulo.shift(2.5*UP)
 
