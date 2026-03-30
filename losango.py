@@ -132,7 +132,7 @@ class AreaLosango(MovingCameraScene):
 
         self.wait(2)
 
-        label_area_retangulo = MathTex(r'Area Retangulo:')
+        label_area_retangulo = Text('Área Retangulo:')
 
         label_area_retangulo.shift(1.4*DOWN)
 
@@ -152,7 +152,7 @@ class AreaLosango(MovingCameraScene):
 
         self.wait(2)
 
-        label_area_losango = MathTex(r'AreaLosango:')
+        label_area_losango = Text('Área Losango:')
 
         label_area_losango.shift(1.4*DOWN)
 
